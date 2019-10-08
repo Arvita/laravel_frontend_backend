@@ -20,7 +20,7 @@
 			<li class="{{ isset($m_ms)? $m_ms : '' }}">
 				<a href="javascript:void(0)"><i class="clip-cog-2"></i><span class="title"> Setting </span><i class="icon-arrow"></i><span class="selected"></span></a>
 				<ul class="sub-menu">
-					<li class="{{ isset($sm_ms_user)? $sm_ms_user : '' }}"><a href="{{ url('/user')}}"><span class="title">User</span></a></li>
+					<li class="{{ isset($sm_ms_user)? $sm_ms_user : '' }}"><a href="{{ url('/user')}}"><span class="title">Manage Users</span></a></li>
 					
 				</ul>
 			</li>

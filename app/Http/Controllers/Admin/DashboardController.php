@@ -26,7 +26,7 @@ class DashboardController extends Controller
      */
     public function index(Guard $auth)
     {
-        return view('home',['m_dashboard' => 'active open',
+        return view('Admin.dashboard',['m_dashboard' => 'active open',
         'user' => $auth->user()]);
     }
     public function show_404()

@@ -37,7 +37,7 @@
                       </tbody>
                     </table>
                     <div class="col-md-12 text-right">
-                    <button type="button" data-url="{{ route('user.create') }}" class="ajax_modal btn btn-primary">Add New <i class="fa fa-plus"></i></button>
+                    <button type="button" data-url="{{ route('user.create') }}" class="ajax_modal btn btn-orange">Add New <i class="fa fa-plus"></i></button>
                     </div>
         </div>
       </div>
