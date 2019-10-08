@@ -1,4 +1,4 @@
-@extends('layouts.template')
+@extends('backend/layouts.template')
 
 @section('content')
 <div class="main-content">
@@ -12,7 +12,7 @@
 					<li class="active">Dashboard </li>
 				</ol>
 
-				<div class="page@extends('layouts.template')
+				<div class="page@extends('backend/layouts.template')
 
 @section('content')
 <div class="main-content">

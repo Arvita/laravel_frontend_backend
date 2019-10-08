@@ -14,13 +14,15 @@
 
 Auth::routes();
 Route::group(['middleware' => ['web','auth']], function () {
-	Route::get('/','Admin\DashboardController@index');
-	Route::get('/home', 'Admin\DashboardController@index')->name('home');
-	Route::get('/404','Admin\DashboardController@show_404');
+	//Route::get('/backend','Backend\DashboardController@index')->name('backend');
+	Route::get('/dashboard', 'Backend\DashboardController@index')->name('dashboard');
+	Route::get('/404','Backend\DashboardController@show_404');
 	Route::get('logout', 'Auth\LoginController@logout');
 
-	 Route::post('/user/data', 'Admin\UserController@data');
-    Route::get('/user/{kode}/conf', 'Admin\UserController@confirm');
-    Route::resource('/user', 'Admin\UserController');
+	Route::post('/user/data', 'Backend\UserController@data');
+    Route::get('/user/{kode}/conf', 'Backend\UserController@confirm');
+    Route::resource('/user', 'Backend\UserController');
 
 });
+
+Route::get('/', 'Frontend\HomeController@index')->name('home');

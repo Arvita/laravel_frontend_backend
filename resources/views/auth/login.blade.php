@@ -1,4 +1,4 @@
-@extends('layouts.login')
+@extends('backend/layouts.login')
 
 @section('content')
       <!-- start: LOGIN BOX -->
