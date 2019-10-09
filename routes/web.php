@@ -14,7 +14,7 @@
 
 Auth::routes();
 Route::group(['middleware' => ['web','auth']], function () {
-	//Route::get('/backend','Backend\DashboardController@index')->name('backend');
+	Route::get('/admin','Backend\DashboardController@index');
 	Route::get('/dashboard', 'Backend\DashboardController@index')->name('dashboard');
 	Route::get('/404','Backend\DashboardController@show_404');
 	Route::get('logout', 'Auth\LoginController@logout');
